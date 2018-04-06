@@ -5,6 +5,25 @@
   <title>Web管理平台</title>
 </head>
 <body>
-  <h1>Web管理平台</h1>
+ <audio src="./music/夜空中最亮的星.mp3"></audio>
 </body>
+<script type="text/javascript">
+    var btn = document.querySelector("button");
+    function playAudio() {
+        var audio = document.querySelector("audio"),
+            audioSrc = audio.src,
+            playStatus = false;
+        if(playStatus) {
+            audio.pause();
+            audio.src = '';
+            playStatus = true;
+        } else {
+            audio.src = audioSrc;
+            console.log(audioSrc);
+            audio.play();
+            playStatus = false
+        }
+    }
+    playAudio()
+</script>
 </html>
