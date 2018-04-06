@@ -1,2 +1,2 @@
 # static-repository
-静态资源
+此服务器用来存放静态资源
