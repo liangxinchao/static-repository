@@ -1,29 +1,519 @@
-<!doctype html>
-<html lang="en">
+﻿<!doctype html>
+
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <title>Web管理平台</title>
+	<title>梁小勿猜</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="http://www.liangxinchao.cn:3000/images/shui.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- jquery.migrate用于将jquery1.9以上的版本像之前版本兼容 -->
+	<script type="text/javascript" src="js/jquery.migrate.js"></script>
+	<!-- jquery.appear是一个强大的和敏捷的内容出现在滚动 -->
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<!-- jquery.bxslider是一款免费的感应式 jQuery 幻灯,可以自适应屏幕大小,支持PC、手机客户端,支持单图切换、多图滚动 -->
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<!-- jquery.magnific-popup一个真正意义上的响应试灯箱插件 -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<!-- bootstrap是一个移动优先的js框架 -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+   <!-- jquery.themepunch滑动幻灯片视觉差放置切换的内容，包括主要图片、文字、按钮信息。这些信息配上各自的data-属性，是为了让Slider Revolution识别 -->
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<!-- jquery.imagesloaded是一款用于检测页面中的图片是否被加载的js插件 -->
+	<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+  	<!-- jquery.isotope让网页元素以各种随机方式实时重组排列 -->
+  	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<!-- waypoints是一个 jQuery 用来实现捕获各种滚动事件的插件,例如实现无翻页的内容浏览,或者固定某个元素不让滚动等等 -->
+	<script type="text/javascript" src="js/waypoints.js"></script>
+	<!-- 菜单栏滚动吧 -->
+	<script type="text/javascript" src="js/plugins-scroll.js"></script>
 </head>
 <body>
- <audio src="./music/夜空中最亮的星.mp3"></audio>
+	<!-- Container -->
+	<div id="container">
+
+		<!-- Header
+		    ================================================== -->
+		<header class="clearfix">
+			<!-- Static navbar -->
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="top">
+				
+				</div>
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><img alt="" src="./images/shui.png"></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="active" href="#part0">首页</a></li>
+							<li><a href="#part1">设计一</a></li>
+							<li><a href="#part2">设计二</a></li>
+							<li><a href="#part3">设计三</a></li>
+							<li><a href="#part4">设计四</a></li>
+							<li><a href="#part5">设计五</a></li>
+							<li><a href="#part6">设计六</a></li>
+							<li><a href="#part7">设计气</a></li>
+							<li><a href="#part8">设计八</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->
+
+		<!-- 首页 
+			================================================== -->
+		<div class="section">
+			<div id="part0">
+				<div id="slider" class="part0-web">
+					<div class="tp-banner-container">
+						<div class="tp-banner" >
+							<ul>
+								<li >
+									<img src="./images/bg1.jpg"  alt="slidebg1" data-bgfit="100%" data-bgposition="left top" data-bgrepeat="no-repeat">
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="slider" class="part0-app">
+					<div class="tp-banner-container">
+						<div class="tp-banner" >
+							<ul>
+								<!-- SLIDE  -->
+								<li data-transition="3dcurtain-horizontal" data-slotamount="7" data-masterspeed="500" >
+									<!-- MAIN IMAGE -->
+									<img src="images/bg1.jpg"  alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+									<!-- LAYERS -->
+								</li>
+								<li data-transition="3dcurtain-horizontal" data-slotamount="7" data-masterspeed="500" >
+									<!-- MAIN IMAGE -->
+									<img src="images/bg1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+									<!-- LAYERS -->
+								</li>
+								<li data-transition="3dcurtain-horizontal" data-slotamount="7" data-masterspeed="500" >
+									<!-- MAIN IMAGE -->
+									<img src="images/bg1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+
+									<!-- LAYERS -->
+								</li>
+								<!-- SLIDE  -->
+							</ul>
+							<!-- <div class="tp-bannertimer"></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 首页 -->
+
+		<!-- 菜根 
+			================================================== -->
+		<div class="section">
+			<div id="part1" name="part1">
+				<div class="container">
+					<div class="title-section triggerAnimation animated" data-animate="fadeIn">
+						<h1><span class="origin">梁梁，</span>梁梁梁梁梁梁</h1>
+						<p>　　1、人生均如此，一方面要知足，知足才能常乐，知足才有幸福；一方面又要不满足，不满足才会去追求、进取，才能抵达人生中的一个个风景如画的高地。</p>
+					</div>
+				</div>
+				<div  class="gen-box triggerAnimation animated"  data-animate="fadeInUp">
+					<img class="tu" src="images/genbgapp.png" />
+					<div class="text">
+						<h5 class="title origin">ABOUT US</h5>
+						<p class="content">河南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商，作为全国的构建者，南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商。
+							南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商
+							南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商南省永城市美大家电卫浴是河南省的标杆项目“质量优良”的官方唯一服务商
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 菜根 -->
+
+		<!-- 架构 
+			================================================== -->
+		<div class="section">
+			<div id="part2">
+				<div class="container">
+					<div class="title-section triggerAnimation animated" data-animate="fadeIn">
+						<h1><span class="origin">匠心，</span>让我们精益求精</h1>
+						<p>梁梁梁梁梁梁<span class="apphide">，</span><span class="appshow"><br/></span>创新创业的服务者，转型升级的推动者</p>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="gou-box triggerAnimation animated" data-animate="fadeInDown">
+								<img width="100%" src="images/bg1.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 架构 -->
+
+		<!-- 服务 
+			================================================== -->
+		<div class="section" id="portfolio-section">
+			<div id="part3">
+				<div class="container">
+					<div class="title-section triggerAnimation animated" data-animate="fadeIn">
+						<h1><span class="origin">服梁梁梁梁梁梁，</span>梁梁梁梁梁梁</h1>           
+            			<p>梁梁梁梁梁梁，<span class="appshow"><br/></span>梁梁梁梁梁梁。</p>
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="padding:0;">
+							<div class="ser-box triggerAnimation animated" data-animate="fadeInUp">
+								<div class="bottom">
+									<div class="work-post odd">
+									
+									</div>
+									<div class="work-post even">
+										
+								
+									
+								
+								
+										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 服务 -->
+
+		<!-- blog 汇创业 
+			================================================== -->
+		<div class="section">
+			<div id="part4">
+				<div class="container">
+					<div class="title-section">
+						<h1><span class="origin">梁梁梁梁梁梁，</span>梁梁梁梁梁梁</h1>
+						<p>　　1、人生均如此，一方面要知足，知足才能常乐，知足才有幸福；一方面又要不满足，不满足才会去追求、进取，才能抵达人生中的一个个风景如画的高地。</p>
+					</div>
+					<div class="ye-box triggerAnimation animated" data-animate="fadeInUp">
+						<div class="row webshow">
+							<div class="col-md-4">
+								<ul class="tright">
+									<li>
+										<p class="iconRow">
+											<i class="icon icon-1"></i>
+										</p>
+										<p class="titleRow">笑笑</p>
+										<p class="infoRow">梁梁梁梁梁梁</p>
+									</li>
+									<li>
+										<p class="iconRow">
+											<i class="icon icon-2"></i>
+										</p>
+										<p class="titleRow">笑笑</p>
+										<p class="infoRow">梁梁梁梁梁梁梁梁梁梁梁梁</p>
+									</li>
+									<li>
+										<p class="iconRow">
+											<i class="icon icon-3"></i>
+										</p>
+										<p class="titleRow">笑笑</p>
+										<p class="infoRow">梁梁梁梁梁梁，梁梁梁梁梁梁</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								
+							</div>
+						
+						</div>
+						<div class="row appshow">
+							
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 汇创业 -->
+
+		<!-- 案例
+			================================================== -->
+		<div class="section" id="portfolio-section">
+			<div id="part5">
+				<div class="container">
+					<div class="title-section triggerAnimation animated" data-animate="fadeIn">
+						<h1><span class="origin">拼搏，</span>我们从不止步</h1>
+						<p>拼搏从不止步从不止步从不止步从不止步</p>
+					</div>
+				</div>
+				<div class="city-container">
+					<ul class="filter citys">
+						<li>
+							<a class="on" href="javascript:void(0)" data-filter=".hangzhou-1">永城市
+								<div class="icon"><span><em></em></span></div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" data-filter=".shuzhou">永城市
+								<div class="icon hide"><span><em></em></span></div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" data-filter=".wuhan">永城市
+								<div class="icon hide"><span><em></em></span></div>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="portfolio-container triggerAnimation animated" data-animate="fadeInUp">
+					<div class="work-post hangzhou-1">
+						<span class="webshow">
+							<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="middle">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+					</div>
+					<div class="work-post hangzhou-2">
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="middle">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+					</div>
+					<div class="work-post shuzhou">
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="middle">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+					</div>
+					<div class="work-post wuhan">
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="middle">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+					</div>
+				
+				
+					<div class="work-post yancheng">
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="middle">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+						<span class="webshow">
+								<img alt="" src="images/bg1.jpg"/>
+						</span>
+					</div>
+				</div>
+				<div class="text-container">
+					<div class="text-post text-post-1 active">
+						<ul class="filter">
+							<li>
+								<a href="javascript:void(0)" class="on" data-filter=".hangzhou-1">杭州杭州杭州杭州</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" data-filter=".hangzhou-2">小镇</a>
+							</li>
+						</ul>
+						<section>
+							<p class="part show">杭州</p>
+							<p class="part">只是，亲爱的，今日这霏霏细雨是否也会浓稠你对我的思念?你是否也如往昔般在烟雨江南的雕栏曲处将你我的红尘绘制成娟?你曾说你喜爱诗情画意的生活，亲爱的，等我们暮年白发苍苍的时候，我们一齐执手烟雨湖畔，看春日里百花争艳，秋日里荷映碧蓝，你作曲我抚琴，共谱一曲绝世潇湘，好吗</p>
+						</section>
+					</div>
+					<div class="text-post">
+						<ul>
+							<li><a href="javascript:void(0)">温暖温暖</a></li>
+						</ul>
+						<section>
+							<p>　　阳光可以给我们温暖，照亮我们的心房，对于同学之间，我们应该收藏阳光，这样我们就能时刻拥有灿烂的笑容，但是今天我跟同桌吵架了，我们吵得很凶，最后谁也不理谁了。</p>
+						</section>
+						<div class="phone-container">联系电话：李女士177115205</div>
+					</div>
+					<div class="text-post">
+						<ul>
+							<li><a href="javascript:void(0)">珍惜</a></li>
+						</ul>
+						<section>
+							<p>　　我们往往有这样的感触，就是曾经拥有的东西不知道珍惜，等到失去后才懂得了它的可贵，那为什么我们不能在拥有的时候珍惜它呢，曾经我看过这样一个故事，从中我明白了一个道理。。</p>
+						</section>
+						<div class="phone-container">联系电话：027-84666311</div>
+					</div>
+					<div class="text-post">
+						<ul>
+							<li><a href="javascript:void(0)">天幕创想小镇</a></li>
+						</ul>
+						<section>
+							<p>　　生活对于我们每一个人来讲，并不是一帆风顺的，我们都会遇到各种各样的困难和挫折，都会有阴天下雨的时候，当面对生活当中的这些时候时，我们不要悲观，要用微笑来面对生活，那样我们就会获得快乐。</p>
+						</section>
+						<div class="phone-container">联系电话：陆先生15900394347</div>
+					</div>
+					<div class="text-post">
+						<ul>
+							<li><a href="javascript:void(0)">青春</a></li>
+						</ul>
+						<section>
+							<p>　　正值青春的我们，曾经那么疯狂，曾经有过绝望，曾经以为受伤。当我们梦醒，才发现一切都是虚伪。因为，现在的我们只是背负着理想。</p>
+						</section>
+						<div class="phone-container">联系电话：88888888</div>
+					</div>
+					<div class="text-post">
+						<ul>
+							<li><a href="javascript:void(0)">土地</a></li>
+						</ul>
+						<section>
+							<p>　　站在红旗下，我仿佛可以看到，在这古老的土地上，曾经创造了多少辉煌。祖国的山川大地，一草一木，一花一石，一砖一瓦，都在我心中。</p>
+						</section>
+						<div class="phone-container">联系电话：666666666</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 案例 -->
+
+		<!-- 团队
+			================================================== -->
+		<div class="section">
+			<div id="part6">
+				<div class="container">
+					<div class="title-section">
+						<h1><span class="origin">专业，</span>代码最简化</h1>
+						<p>把工作服务做到极致，代码最简化，何尝不是快乐呢把工作服务做到极致，代码最简化，何尝不是快乐呢</p>
+					</div>
+					<div class="team-box triggerAnimation animated" data-animate="fadeInUp">
+						<ul>
+							<li>
+								<img class="logo" alt="" src="images/shui.png" />
+								<div class="into into1">
+									<em></em>  
+									<p class="txt1">“把工作服务做到极致，代码最简化，何尝不是快乐呢？<br/>Achieve the ultimate on startup services while helping others, how wonderful that would be.”</p>
+									<p class="txt2">梁新朝&nbsp;<span>程序员</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="into into2">
+									<em></em>
+									<p class="txt1">“把工作服务做到极致，代码最简化，何尝不是快乐把工作服务做到极致，代码最简化，何尝不是快乐把工作服务做到极致，代码最简化，何尝不是快乐</p>
+									<p class="txt2">梁新朝&nbsp;<span>程序员</span></p>
+								</div>
+								<img class="logo" alt="" src="images/shui.png" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 团队 -->
+
+		<!-- 动态
+			================================================== -->
+		<div class="section" id="portfolio-section">
+			<div id="part7">
+				<div class="container">
+					<div class="title-section triggerAnimation animated" data-animate="fadeIn">
+						<h1><span class="origin">行动，</span>理想与目标</h1>
+						<p>　　理想与目标，使我加快了脚步。泰戈尔说：“世界以痛吻我，我却回报以歌。”痛苦和折磨可以磨平我的棱角，并没有使我止步;成功与希望可以提升我的信心，并没有使我怠惰。</p>
+					</div>
+					<div class="row video-box">
+						<div class="col-md-4">
+							<div class="prev"></div>
+							<div class="video-name">
+						
+						
+							<div class="next"></div>
+						</div>
+						<div class="col-md-8">
+						
+						</div>
+					</div>
+				</div>
+				<div class="video-container">
+					<div class="video-list">
+		            </div>
+		            <div class="video-name">
+						<ul>
+						
+					
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End 动态 -->
+
+		<!-- 合作
+			================================================== -->
+		<div class="section">
+			<div id="part8">
+			
+			
+				<div class="container">
+					<!-- <div class="info-part">
+						<span class="item"><a href="#part0">首页</a></span>
+						<span class="item"><a href="#part1">菜根</a></span>
+						<span class="item"><a href="#part2">架构</a></span>
+						<span class="item"><a href="#part3">服务</a></span>
+						<span class="item"><a href="#part4">汇创业</a></span>
+						<span class="item"><a href="#part5">案例</a></span>
+						<span class="item"><a href="#part6">团队</a></span>
+						<span class="item"><a class="none" href="#part7">动态</a></span>
+						<br class="row"/>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- End 合作 -->
+
+		<footer class="fpart">
+			<div class="txt">版权所有&nbsp; 2018-2019&nbsp; 梁小勿猜,&nbsp; All Rights Reserved <a href="http://www.miitbeian.gov.cn/">&nbsp;浙ICP备18015546号</a></div>
+			<div class="txt">
+				
+			</div>
+		</footer>
+	</div>
+	<!-- End Container -->
+
+	<!-- smooth-scroll 固定元素 用啊-->
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/circle-skill.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
-<script type="text/javascript">
-    var btn = document.querySelector("button");
-    function playAudio() {
-        var audio = document.querySelector("audio"),
-            audioSrc = audio.src,
-            playStatus = false;
-        if(playStatus) {
-            audio.pause();
-            audio.src = '';
-            playStatus = true;
-        } else {
-            audio.src = audioSrc;
-            console.log(audioSrc);
-            audio.play();
-            playStatus = false
-        }
-    }
-    playAudio()
-</script>
 </html>
