@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="icon" href="./images/shui.png" type="image/x-icon"/>
+	<link rel="icon" href="images/shui.png" type="image/x-icon"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-
+	<link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- jquery.migrate用于将jquery1.9以上的版本像之前版本兼容 -->
 	<script type="text/javascript" src="js/jquery.migrate.js"></script>
@@ -39,6 +39,16 @@
 	<script type="text/javascript" src="js/waypoints.js"></script>
 	<!-- 菜单栏滚动吧 -->
 	<script type="text/javascript" src="js/plugins-scroll.js"></script>
+	<style>
+		.swiper-container {
+    width: 100%;
+    height: 400px;
+}  
+.swiper-slide img{
+	width: 100%;
+	height: 400px;
+}
+	</style>
 </head>
 <body>
 	<!-- Container -->
@@ -84,16 +94,22 @@
 		<div class="section">
 			<div id="part0">
 				<div id="slider" class="part0-web">
-					<div class="tp-banner-container">
-						<div class="tp-banner" >
-							<ul>
-								<li >
-									<img src="./images/bg1.jpg"  alt="slidebg1" data-bgfit="100%" data-bgposition="left top" data-bgrepeat="no-repeat">
-								</li>
-
-							</ul>
-						</div>
-					</div>
+						<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="images/bg1.jpg"/></div>
+									<div class="swiper-slide"><img src="images/bg2.jpg"/></div>
+									<div class="swiper-slide"><img src="images/bg1.jpg"/></div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+								
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+								
+								<!-- 如果需要滚动条 -->
+								<div class="swiper-scrollbar"></div>
+							</div>
 				</div>
 				<div id="slider" class="part0-app">
 					<div class="tp-banner-container">
@@ -516,4 +532,26 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
+<script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		speed: 2500,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction:false,
+		//waitForTransition: false,
+	},//可选选项，自动滑动
+	loop : true,
+	mousewheel: true,
+	pagination:{
+    el: '.swiper-pagination',
+	hideOnClick :true,
+	clickable :true,
+  },
+	navigation: {
+    nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+  },
+})
+</script>
 </html>
